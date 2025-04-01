@@ -3,6 +3,7 @@
 
 int main(){
 
+    //declarar as variáveis de acordo com seu tipo
     char estado1, estado2;
     char codigo1[3], codigo2[3], cidade1[30], cidade2[30];
     int pop1, pop2, ptstur1, ptstur2;
@@ -10,6 +11,7 @@ int main(){
 
     printf("Bem vindo ao cadastro de cartas do Super Trunfo - Cidades!\n");
     
+    //solicitar informações ao usuário e gravar as mesmas nas variáveis
     printf("Você vai digitar as informações da primeira carta.\n");
     printf("Digite o nome da cidade: ");
     fgets(cidade1, 30, stdin);
@@ -41,7 +43,8 @@ int main(){
     printf("Digite o número de pontos turísticos da cidade: ");
     scanf("%d", &ptstur2);
 
-    printf("\nCarta 2\n");
+    //imprimir na tela as informações de cada carta
+    printf("\nCarta 1\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %c01\n", estado1);
     printf("Nome da cidade: %s\n", cidade1);
@@ -59,7 +62,7 @@ int main(){
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de pontos turísticos: %d\n", ptstur2);
 
-
+    //finalizar o programa
     return 0;
 
 }
